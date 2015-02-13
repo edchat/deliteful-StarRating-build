@@ -1,0 +1,11 @@
+{
+  "name": "deliteful-StarRating-build",
+  "version": "0.6.0",
+  "ignore": [
+    ".jshintrc",
+    ".gitattributes",
+    ".travis.yml",
+    "tests",
+    "CONTRIBUTING.md"
+  ]
+}
