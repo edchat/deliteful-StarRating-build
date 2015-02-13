@@ -11,7 +11,9 @@ No official release yet.
 _Bower_ release installation:
 
     $ bower install "https://github.com/edchat/deliteful-StarRating-build.git"
+
 In the future (after it is published) it will be:
+
     $ bower install deliteful-StarRating-build
 
 
