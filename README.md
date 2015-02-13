@@ -10,16 +10,9 @@ No official release yet.
 
 _Bower_ release installation:
 
+    $ bower install "https://github.com/edchat/deliteful-StarRating-build.git"
+    After it is published it will be:
     $ bower install deliteful-StarRating-build
-
-_Manual_ master installation:
-
-    $ git clone git://github.com/ibm-js/deliteful-StarRating-build.git
-
-Then install dependencies with bower (or manually from github if you prefer to):
-
-	$ cd deliteful-StarRating-build
-	$ bower install
 
 
 ## How to use
@@ -29,17 +22,22 @@ refer to modules with `"deliteful/foo"`.
 
 For example, this code:
 ```js
-require(["app/main", "deliteful/foo"], function() {
+require(["app/main", "deliteful/StarRating"], function() {
 	...
 });
 ```
 Becomes:
 ```js
 require(["deliteful-StarRating-build/layer"], function() {
-	require(["app/main", "deliteful/foo"], function() {
+	require(["app/main", "deliteful/StarRating"], function() {
 		...
 	});
 });
+```
+
+Or you can load the "deliteful-StarRating-build/layer" with a script tag, and without the extra require
+```
+<script src="bower_components/deliteful-StarRating-build/layer.js"></script>
 ```
 
 ## Licensing
