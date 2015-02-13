@@ -11,14 +11,14 @@ No official release yet.
 _Bower_ release installation:
 
     $ bower install "https://github.com/edchat/deliteful-StarRating-build.git"
-    After it is published it will be:
+In the future (after it is published) it will be:
     $ bower install deliteful-StarRating-build
 
 
 ## How to use
 
 To load the minified layer you need to wrap your main `require` call with another `require`, requiring `"deliteful-StarRating-build/layer"`. Then you should continue to
-refer to modules with `"deliteful/foo"`.
+refer to modules with `"deliteful/StarRating"`.
 
 For example, this code:
 ```js
@@ -35,7 +35,7 @@ require(["deliteful-StarRating-build/layer"], function() {
 });
 ```
 
-Or you can load the "deliteful-StarRating-build/layer" with a script tag, and without the extra require
+Or you can load the "deliteful-StarRating-build/layer" with a script tag, and without the extra require for `"deliteful-StarRating-build/layer"`
 ```
 <script src="bower_components/deliteful-StarRating-build/layer.js"></script>
 ```
