@@ -19,10 +19,11 @@ In the future (after it is published) it will be:
 
 ## How to use
 
-To load the minified layer you need to wrap your main `require` call with another `require`, requiring `"deliteful-StarRating-build/layer"`. Then you should continue to
-refer to modules with `"deliteful/StarRating"`.
+To load the minified layer you have two options, you can include the layer with a script tag, or you can wrap your main `require`
+call with another `require`, requiring `"deliteful-StarRating-build/layer"`. Then you should continue to refer to modules
+with `"deliteful/StarRating"`.
 
-For example, this code:
+For example, to wrap the main require with another require, this code:
 ```js
 require(["app/main", "deliteful/StarRating"], function() {
 	...
@@ -37,10 +38,16 @@ require(["deliteful-StarRating-build/layer"], function() {
 });
 ```
 
-Or you can load the "deliteful-StarRating-build/layer" with a script tag, and without the extra require for `"deliteful-StarRating-build/layer"`
+Or you can load the "deliteful-StarRating-build/layer" with a script tag, without the extra require for `"deliteful-StarRating-build/layer"` like this:
 ```
 <script src="bower_components/deliteful-StarRating-build/layer.js"></script>
 ```
+
+Then to use the StarRating widget with a declarative instantiation, add this to your html:
+```
+<d-star-rating value="3"></d-star-rating>
+```
+See [`deliteful/StarRating`](https://github.com/ibm-js/deliteful/blob/master/docs/StarRating.md) for full details on how instantiate a StarRating widget.
 
 ## Licensing
 
