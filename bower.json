@@ -2,7 +2,7 @@
   "name": "deliteful-StarRating-build",
   "version": "0.6.0",
   "dependencies": {
-    "requirejs": "2.1.x",
+    "requirejs": "2.1.x"
   },
   "ignore": [
     ".jshintrc",
