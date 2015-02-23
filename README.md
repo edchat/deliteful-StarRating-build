@@ -38,7 +38,7 @@ require(["delite-fullBuild/fullBuild", "deliteful-StarRating-build/layer"], func
 });
 ```
 
-Or you can load the "deliteful-StarRating-build/layer" and the "delite-fullBuild/fullBuild" with script tags, without the extra require for `"deliteful-Combobox-build/layer"` like this:
+Or you can load the "deliteful-StarRating-build/layer" and the "delite-fullBuild/fullBuild" with script tags, without the extra require for `"deliteful-StarRating-build/layer"` like this:
 ```
 <script src="bower_components/delite-fullBuild/fullBuild.js"></script>
 <script src="bower_components/deliteful-StarRating-build/layer.js"></script>
